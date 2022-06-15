@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with DOM</title>
+    <style>
+        .container {
+            background-color: darkcyan;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-position: inside;
+            padding: 0;
+        }
+
+        li {
+            background-color: aliceblue;
+            padding: 10px;
+        }
+
+        li.styled {
+            background-color: rgb(198, 215, 250);
+            font-weight: bold;
+        }
+
+        li:hover {
+            background-color: rgb(171, 186, 198);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Working with DOM</h1>
+
+    <div class="container">
+        <ul id="main-list">
+            <li>First element</li>
+            <li>Second element</li>
+        </ul>
+    </div>
+
+    <input type="text" id="text-input" placeholder="Type text here...">
+    <button id="add-button">Add Item</button>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
