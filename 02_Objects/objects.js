@@ -61,7 +61,7 @@ let product = {
     quantity: 4,
 
     // methods
-    print() {
+    print: function () {
         console.log(`<><><><> ${this.model} : ${this.type} <><><><>`);
         console.log(`Total price: ${this.price * this.quantity}UAH`);
     },
@@ -75,3 +75,14 @@ product.print();
 product.render();
 
 document.write(`<p>Generated text from JavaScript</p>`);
+
+// array of objects
+let coords = [
+    { x: 1, y: 3 },
+    { x: 4, y: 6 },
+    { x: 2, y: 2 }
+];
+
+for (const coord of coords) {
+    console.log(`X: ${coord.x} Y: ${coord.y}`);
+}
