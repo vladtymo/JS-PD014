@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM with Forms</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home
+                            <span class="visually-hidden">(current)</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-sm-2" type="text" placeholder="Search">
+                    <button id="search-button" class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-4">
+        <h2>Add New Product</h2>
+        <form>
+            <fieldset>
+                <div class="form-group row">
+                    <div class="form-group col">
+                        <label for="name-input" class="form-label mt-4">Name</label>
+                        <input type="text" class="form-control" id="name-input" placeholder="Enter name">
+                        <small class="form-text text-muted">Enter the product name or model.</small>
+                    </div>
+                    <div class="form-group col">
+                        <label for="price-input" class="form-label mt-4">Price</label>
+                        <input type="number" class="form-control" id="price-input" min="0" step="100"
+                            placeholder="Enter price">
+                        <small class="form-text text-muted">Enter the product price in American dollars ($).</small>
+                    </div>
+                </div>
+
+                <button type="submit" id="add-button" class="btn btn-primary mt-3">Submit</button>
+            </fieldset>
+        </form>
+        <hr>
+
+        <h2>Product List</h2>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                </tr>
+            </thead>
+            <tbody id="product-table-body">
+            </tbody>
+        </table>
+
+        <button id="filter-button" class="btn btn-outline-primary" type="button">Filter</button>
+        <button id="clear-filters-button" class="btn btn-outline-primary" type="button">Clear filters</button>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+
+</html>
