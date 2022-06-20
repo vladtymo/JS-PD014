@@ -1,0 +1,25 @@
+{
+    "name": "FOZZY",
+    "type": "Hypermarket",
+    "address": {
+        "street": "Kurchatova",
+        "building": "7a"
+    },
+    "workers": [
+        {
+            "firstName": "Olga",
+            "lastName": "Feragaeg",
+            "salary": 14000
+        },
+        {
+            "firstName": "Igor",
+            "lastName": "Nfrew",
+            "salary": 12000
+        },
+        {
+            "firstName": "Vasya",
+            "lastName": "Mkfie",
+            "salary": 32400
+        }
+    ]
+}
